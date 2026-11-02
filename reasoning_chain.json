@@ -1,0 +1,65 @@
+{
+  "title": "Six-step reasoning chain from the atomic level to nucleated self-excitation",
+  "source_paper": {
+    "title": "Nucleated Self-Excitation: Conformational Propagation and Self-Sustained Excitation in Proteins, and a Universal Mechanism",
+    "doi_version_v1_2": "10.5281/zenodo.23860530",
+    "doi_concept_all_versions": "10.5281/zenodo.23858233",
+    "section": "2",
+    "license": "CC-BY-4.0"
+  },
+  "claim": "Nucleated self-excitation is not induced from biological phenomena; it grows out of the atomic level. Each step is established physical chemistry or a direct consequence thereof.",
+  "chain": [
+    {
+      "step": 1,
+      "name": "conformational states",
+      "statement": "A protein possesses multiple local minima on its conformational energy landscape; each minimum corresponds to a (meta)stable conformational state; inter-state conversion requires crossing an activation barrier.",
+      "basis": "energy-landscape theory (standard picture)"
+    },
+    {
+      "step": 2,
+      "name": "duality of the excited state",
+      "statement": "A molecule in a high-energy conformational state is simultaneously an attenuator (spontaneous departure rate gamma, plus cellular degradation channels) and an exciter (template-induced conversion of a soluble molecule into the same state, rate beta). The excited state is at once a loss source and a gain source — the atomic definition of self-excitation.",
+      "basis": "energy-landscape theory + templating (prion-type propagation, established)"
+    },
+    {
+      "step": 3,
+      "name": "competition of two rates",
+      "statement": "Rate ratio R = beta/gamma: expected new excitations per excited molecule during its lifetime, against its expected dissipation.",
+      "basis": "definition (branching-process structure)"
+    },
+    {
+      "step": 4,
+      "name": "crossing one",
+      "statement": "R<1: chain decays (fluctuation). R=1: critical. R>1: self-sustaining propagation (gain chain). Lag phase = accumulation before crossing; seed-dose effect = forward shift of crossing time by injected excitations.",
+      "basis": "branching process / epidemic R0=beta/gamma structure (same quantity, not analogy)"
+    },
+    {
+      "step": 5,
+      "name": "population coherence to macroscopic nucleation",
+      "statement": "Excitation-transfer events accumulate into macroscopic ordered structure (fibrils, condensates): molecular fluctuation (short residence) converts to macroscopic structure (long residence) — the nucleation divide. Boundary stated honestly: R>1 is necessary, not sufficient; spatial coherence into a supracritical nucleus additionally requires classical-nucleation conditions (surface-energy barrier, critical nucleus size, Ostwald regimes).",
+      "basis": "classical nucleation theory (layered condition)"
+    },
+    {
+      "step": 6,
+      "name": "cross-domain bridge",
+      "statement": "The structure — medium units excited, exciting neighbors, gain against decay, collective mode established — does not depend on protein chemistry; generalized to ecology, epidemiology, phase separation; the field-medium (wave) form is the companion paper's subject.",
+      "basis": "invariance of R=beta/gamma across instantiated domains (paper section 5)"
+    }
+  ],
+  "derived_definitions": {
+    "rate_ratio": "R = beta/gamma (s^-1 / s^-1, dimensionless)",
+    "three_layer_criterion": {
+      "mechanism": "rate ratio crossing one (R>1 ignition)",
+      "morphology": "residence-time ratio tau/T across threshold",
+      "maintenance": "dual survival conditions (structural residence x replication commitment; four quadrants)"
+    }
+  },
+  "testable_prediction": {
+    "statement": "Branching approximation N(t) ~ S0 * exp((beta-gamma)t) gives t_lag = [1/(beta-gamma)] * ln(N_det/S0): lag linear in ln(S0) with mechanically interpretable slope.",
+    "first_round_data": "four literature systems log-linear (R2_ln >= 0.93 in 4/4; delta AIC <= -10 in 3/4); beta-gamma inversions all positive; independent cross-check lambda_theory/lambda_fit = 1.23 (paper section 4.1b)"
+  },
+  "companion_paper_field_form": {
+    "title": "Nucleated Self-Excitation Pass-Through: The Exchange Account of Two Kinds of Motion and the Pass-Through Spectrum",
+    "doi_concept_all_versions": "10.5281/zenodo.23858235"
+  }
+}
